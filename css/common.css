@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-size: 18px;
+    font-family: Lucida Handwriting;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.carousel ul {
+    list-style: none;
+}
+.m_carousel ul {
+    list-style: none;
+}
+
+.carousel ol{
+    list-style: none;
+}
+.m_carousel ol {
+    list-style: none;
+}
+
+.current {
+    background-color: skyblue;
+}
+

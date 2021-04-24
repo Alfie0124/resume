@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="./js/flexible.min.js"></script>
+    <script src="//at.alicdn.com/t/font_2468032_ngdw1898uik.js"></script>
+    <script src="./js/animate.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+    <title>李家鹏个人简历</title>
+</head>
+
+<body>
+    <!-- 侧边栏 -->
+    <aside class="slider_bar">
+        <div class="slider_main">
+            <a href="JavaScript:;">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-icon--my"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="slider_project">
+            <a href="javascript:;">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-xiangmu"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="goBack">
+            <a href="javascript:;">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-huojian"></use>
+                </svg>
+            </a>
+        </div>
+    </aside>
+    <h2>Hi~</h2>
+    <header class="w clearfix">
+        <section class="header_front">
+            <div class="protrait">
+                <img src="./images/protrait.png" alt="">
+            </div>
+            <div class="summary">
+                <p>李家鹏</p>
+                <p>front-end Learner</p>
+            </div>
+        </section>
+        <section class="header_end">
+            <div class="qrCode">
+                <div class="box">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-erweima_2"></use>
+                    </svg>
+                </div>
+                <div class="triangle"></div>
+                <img src="./images/qrcode.png" alt="个人微信" id="qr">
+            </div>
+            <div class="contact">
+                <p>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                    : 792936825
+                </p>
+                <p>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weixin"></use>
+                    </svg>
+                    : ljp792936825
+                </p>
+                <p>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-dianhua"></use>
+                    </svg>
+                    : 17678376887
+                </p>
+            </div>
+        </section>
+    </header>
+
+    <h2>Detail Introduction</h2>
+    <section class="w detail clearfix">
+        <div class="detail_front">
+            <p>性别: 男</p>
+            <p>生日: 2000/01/24</p>
+            <p>家乡: 吉林省长春市</p>
+        </div>
+        <div class="detail_end">
+            <h4>教育背景</h4>
+            <p>2018~2022 大连民族大学 计算机科学与技术</p>
+            <h4>学习情况</h4>
+            <p>主修课程:html&css, javascript, 计算机网络, c&c++, java, python, 数据结构与算法, 计算机组成原理, 软件工程, 软件测试基础,
+                无挂科经历,数学及专业课均能达到80~90分水平</p>
+            <!-- <br> -->
+            <p>英语四级证书</p>
+            <h4>求职方向</h4>
+            <p>web前端开发(实习)</p>
+        </div>
+    </section>
+
+    <h2>my skills</h2>
+    <section class="w skill">
+        <h4>HTML&CSS</h4>
+        <ul>
+            <li>掌握常用标签用法及样式,能使用H5常用新标签,掌握CSS3新样式</li>
+            <li>PC端能用标准流+浮动+定位完成常规PC端页面</li>
+            <li>移动端能使用flex布局+rem+媒体查询完成常规移动端页面</li>
+            <li>能使用媒体查询实现响应式页面效果</li>
+        </ul>
+        <h4>less</h4>
+        <ul>
+            <li>掌握less基本用法,能完全使用less预处理器编写css</li>
+        </ul>
+        <h4>bootstrap</h4>
+        <ul>
+            <li>了解bootstrap栅格系统,能完成简单的响应式开发</li>
+        </ul>
+        <h4>Javascript</h4>
+        <ul>
+            <li>掌握ES5特性(数据类型/作用域/this/原型链/call&apply/闭包等)</li>
+            <li>掌握ES6特性(块作用域,箭头函数等),并能使用ES6编写代码</li>
+            <li>掌握基本DOM,BOM操作</li>
+        </ul>
+        <h4>JQuery</h4>
+        </div>
+        <h4>正在继续学习AJAX</h4>
+    </section>
+
+    <h2>my projects</h2>
+    <section class="w project">
+        <!-- 轮播图pc端 -->
+        <div class="carousel">
+            <!-- 滚动区域 -->
+            <ul class="carousel_img">
+                <li>
+                    <a href="./projects/pinyougou/pinyougou.html" target="_blank"><img src="./images/pinyougou.png"
+                            alt="品优购"></a>
+                </li>
+                <li>
+                    <a href="./projects/m_jd/m_jd.html" target="_blank"><img src="./images/m_jd.png" alt="京东"></a>
+                </li>
+                <li>
+                    <a href="./projects/m_ctrip/m_ctrip.html" target="_blank"><img src="./images/m_ctrip.png"
+                            alt="携程"></a>
+                </li>
+                <li>
+                    <a href="./projects/alibaixiu/alibaixiu.html" target="_blank"><img src="./images/alibaixiu.png"
+                            alt="阿里百秀"></a>
+                </li>
+            </ul>
+            <!-- 箭头 -->
+            <a href="javascript:;" class="arrow arrow_l">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-previewleft"></use>
+                </svg>
+            </a>
+            <a href="javascript:;" class="arrow arrow_r">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-previewright"></use>
+                </svg>
+            </a>
+            <!-- 圆点(js动态生成) -->
+            <ol class="carousel_nav">
+            </ol>
+        </div>
+        <!-- 轮播图移动端 -->
+        <div class="m_carousel">
+            <!-- 滚动区域 -->
+            <ul class="m_carousel_img">
+                <li>
+                    <a href="javascript:;" target="_blank"><img src="./images/pinyougou.png" alt="品优购"></a>
+                </li>
+                <li>
+                    <a href="./projects/pinyougou/pinyougou.html"><img src="./images/pinyougou.png" alt="品优购"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/pinyougou.png" alt="品优购"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="./images/pinyougou.png" alt="品优购"></a>
+                </li>
+            </ul>
+            <!-- 圆点(js动态生成) -->
+            <ol class="m_carousel_nav">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+        <!-- 项目介绍 -->
+        <div class="project_dtl">
+            <div class="project1">
+                <h4>项目1: 静态电商网页</h4>
+                <ul>
+                    <li>含有轮播图</li>
+                    <li>布局:标准流+float+定位</li>
+                </ul>
+            </div>
+            <div class="project1">
+                <h4>项目2: 京东移动端网页</h4>
+                <ul>
+                    <li>布局:流式布局(百分比布局)</li>
+                </ul>
+            </div>
+            <div class="project1">
+                <h4>项目3: 携程移动端网页</h4>
+                <ul>
+                    <li>含有轮播图</li>
+                    <li>布局:flex+rem</li>
+                </ul>
+            </div>
+            <div class="project1">
+                <h4>项目4: 响应式网页</h4>
+                <ul>
+                    <li>框架:bootstrap</li>
+                </ul>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <!-- 简历介绍 -->
+        <div class="resume_cons .clearfix">
+            <h4>关于本简历</h4>
+            <ul>
+                <li>通过媒体查询兼容手机端与pc端,没有使用任何框架</li>
+                <li>手机端: flexible.js + rem + flex(轮播图及以下有待完善)</li>
+                <li>pc端: 定位+浮动</li>
+                <li>使用less预编译的css</li>
+                <li>使用h5新标签,c3盒子模型,js等新特性,不兼容低版本浏览器</li>
+                <li>1.0版本,有待继续完善</li>
+            </ul>
+        </div>
+    </section>
+
+    <h2>my advantage</h2>
+    <section class="advantage w">
+        <ul>
+            <li>兴趣爱好广泛,会吉他和钢琴两种乐器</li>
+            <li>学习能力强,热爱编程</li>
+            <li>工作认真,和别人合作能力强</li>
+            <li>心态良好,有优秀的自我调节能力</li>
+            <li>大学期间自学过unity引擎,能做一些小游戏(想学做RPG,但是莫得时间)</li>
+        </ul>
+    </section>
+    <section class="block"></section>
+</body>
+
+</html>
