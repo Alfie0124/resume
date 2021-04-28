@@ -1,8 +1,8 @@
 window.onload = function () {
 
-    var qrBox = document.querySelector(".qrCode .box");
-    var triangle = document.querySelector(".triangle");
-    var qrImg = document.getElementById("qr");
+    const qrBox = document.querySelector(".qrCode .box");
+    const triangle = document.querySelector(".triangle");
+    const qrImg = document.getElementById("qr");
     qrBox.onmouseenter = function () {
         triangle.style.opacity = "1";
         qrImg.style.opacity = "1";
@@ -13,12 +13,12 @@ window.onload = function () {
     }
 
     // pc端轮播图 
-    var arrow_l = document.querySelector(".arrow_l");
-    var arrow_r = document.querySelector(".arrow_r");
-    var carousel = document.querySelector(".carousel");
+    const arrow_l = document.querySelector(".arrow_l");
+    const arrow_r = document.querySelector(".arrow_r");
+    const carousel = document.querySelector(".carousel");
 
-    var num = 0; // 箭头切换图片
-    var circle = 0; //箭头切换圆点
+    let num = 0; // 箭头切换图片
+    let circle = 0; //箭头切换圆点
 
     // 绑定箭头显示隐藏事件
     carousel.addEventListener("mouseenter", function () {
@@ -38,15 +38,15 @@ window.onload = function () {
     })
 
     // 动态生成圆点,点击改变轮播图片
-    var ul = carousel.querySelector(".carousel_img");
-    var ol = carousel.querySelector(".carousel_nav");
+    const ul = carousel.querySelector(".carousel_img");
+    const ol = carousel.querySelector(".carousel_nav");
     // console.log(ul.children.length);
-    for (var i = 0; i < ul.children.length; i++) {
-        var li = document.createElement("li");
+    for (let i = 0; i < ul.children.length; i++) {
+        const li = document.createElement("li");
         li.setAttribute("data-index", i);
         ol.appendChild(li);
         li.addEventListener("click", function () {
-            for (var i = 0; i < ol.children.length; i++) {
+            for (let i = 0; i < ol.children.length; i++) {
                 ol.children[i].className = "";
             }
             this.className = "current";
@@ -59,7 +59,7 @@ window.onload = function () {
 
     ol.children[0].className = "current";
     //克隆第一个图片实现无缝切换
-    var first = ul.children[0].cloneNode(true);
+    const first = ul.children[0].cloneNode(true);
     ul.appendChild(first);
 
     let dtl = document.querySelector(".project_dtl");
@@ -76,7 +76,7 @@ window.onload = function () {
         if (circle == ul.children.length - 1) {
             circle = 0;
         }
-        for (var i = 0; i < ol.children.length; i++) {
+        for (let i = 0; i < ol.children.length; i++) {
             ol.children[i].className = "";
         }
         ol.children[circle].className = "current";
@@ -94,7 +94,7 @@ window.onload = function () {
         if (circle == -1) {
             circle = ol.children.length - 1;
         }
-        for (var i = 0; i < ol.children.length; i++) {
+        for (let i = 0; i < ol.children.length; i++) {
             ol.children[i].className = "";
         }
         ol.children[circle].className = "current";
@@ -105,8 +105,8 @@ window.onload = function () {
     }, 2000);
 
     // 侧边栏
-    var slider_bar = document.querySelector(".slider_bar");
-    var slider_top = slider_bar.offsetTop - 200 + "px"; // 便固定定位后剧上边距俩
+    const slider_bar = document.querySelector(".slider_bar");
+    let slider_top = slider_bar.offsetTop - 200 + "px"; // 便固定定位后剧上边距俩
     document.addEventListener("scroll", function () {
         // console.log(window.pageYOffset > 200); 
         if (window.pageYOffset >= 200) {
