@@ -1,0 +1,25 @@
+{
+  "include": [
+    "./ts/**/*"
+    // 指定要编译的ts代码
+  ],
+//  "exclude": [
+//    "./hello/**/*"
+//  ]
+  "compilerOptions": { //编译器选项
+
+    "target": "ES6", //编译成哪个版本的js
+    "module": "ES6", //模块化规范
+//    "lib": []
+    "outDir": "./js", //指定编译后的文件所在目录
+
+    "allowJs": true,
+    "checkJs": true,
+    "removeComments": true,
+
+//    "noEmit": true //不生成编译后的文件
+    "noEmitOnError": true, //有错误时不生成编译后的文件
+    "alwaysStrict": true, //编译后的js都为严格模式
+    "noImplicitAny": true //设置没有隐式any
+  }
+}

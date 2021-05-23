@@ -146,7 +146,7 @@ window.onload = function () {
     // 侧边栏 滚到项目介绍
     var slider_project = document.querySelector(".slider_project");
     slider_project.addEventListener("click", function () {
-        windowAnimate(window, 1080);
+        windowAnimate(window, 1300);
     })
     // var a = document.querySelector("#aa");
     // alert(a.offsetTop)

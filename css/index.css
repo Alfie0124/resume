@@ -323,11 +323,8 @@
     border-radius: 7px;
     margin: 2.5px 4px;
   }
-  .project .m_carousel {
-    display: none;
-  }
   .project .project_dtl {
-    height: 200px;
+    display: flex;
     border: 3px solid skyblue;
     margin-top: 10px;
   }
